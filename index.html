@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fahd Ahmed — Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NOISE OVERLAY ═══════════════════════ -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════ CURSOR ═══════════════════════ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════ NAV ═══════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">FA<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="Fahd_Ahmed_CV.pdf" download class="nav-cv-btn">Download CV</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#activities" class="mobile-link">Activities</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="Fahd_Ahmed_CV.pdf" download class="mobile-link accent-link">Download CV</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-orb orb-1" aria-hidden="true"></div>
+    <div class="hero-orb orb-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">
+        <span class="tag-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name reveal-up delay-1">
+        Fahd<br /><span class="outline-text">Ahmed</span>
+      </h1>
+      <div class="hero-descriptor reveal-up delay-2">
+        <span class="descriptor-line"></span>
+        <p>Software Engineer · AASTMT · Cairo</p>
+      </div>
+      <p class="hero-sub reveal-up delay-3">
+        Building applications that matter — from mobile health tools to management systems.
+        Fourth-year Software Engineering student with a passion for clean code and real-world impact.
+      </p>
+      <div class="hero-ctas reveal-up delay-4">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="label-num">01</span>
+        <span class="label-text">About</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-headline reveal-up delay-1">
+          <h2>
+            Turning ideas into<br />
+            <em>working software</em>
+          </h2>
+        </div>
+
+        <div class="about-body reveal-up delay-2">
+          <p>
+            I'm <strong>Fahd Ahmed</strong>, a fourth-year Software Engineering student at the
+            <strong>Arab Academy for Science, Technology & Maritime Transport (AASTMT)</strong>
+            in Cairo. My focus is on the full software lifecycle — from requirements and architecture
+            through to deployment and testing.
+          </p>
+          <p>
+            My work spans mobile applications, web platforms, and management systems. I enjoy
+            problems that sit at the intersection of engineering rigour and user experience —
+            writing software that's not only functional but genuinely useful to the people who
+            rely on it.
+          </p>
+          <p>
+            Beyond code, I've developed real-world experience through internships in product
+            management and IT support, and I've contributed to developer communities as a team
+            leader in Google Developer Groups.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Industry internships</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Technologies used</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="label-num">02</span>
+        <span class="label-text">Projects</span>
+      </div>
+      <h2 class="section-title reveal-up delay-1">Things I've built</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: RayScan -->
+        <div class="project-card reveal-up delay-1" data-index="01">
+          <div class="project-card-inner">
+            <div class="project-meta">
+              <span class="project-year">2024 — 2025</span>
+              <div class="project-links">
+                <a href="https://github.com/Ezzaldeen-Saeed/RayScan" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">RayScan</h3>
+            <p class="project-type">Mobile Application · Flutter</p>
+            <p class="project-desc">
+              A Flutter mobile app using computer vision models to detect bone fractures and
+              chest diseases from X-ray images. Built with a full software engineering pipeline:
+              requirements, ERD, UML, and automated testing. Includes a statistics dashboard.
+            </p>
+            <div class="project-tags">
+              <span>Flutter</span>
+              <span>Computer Vision</span>
+              <span>ML Models</span>
+              <span>SQLite</span>
+              <span>Dart</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Pharmacy Management System -->
+        <div class="project-card reveal-up delay-2" data-index="02">
+          <div class="project-card-inner">
+            <div class="project-meta">
+              <span class="project-year">2023</span>
+              <div class="project-links">
+                <a href="https://github.com/FAHDZER0/Pharmacy-Management-System" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Pharmacy Management System</h3>
+            <p class="project-type">Desktop Application · Java</p>
+            <p class="project-desc">
+              A fully functional multi-user desktop system for pharmacy inventory management.
+              Features bilingual support (Arabic &amp; English), role-based store authorities,
+              and a customisable interface. Built with JavaFX and socket programming for real-time multi-user capability.
+            </p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>JavaFX</span>
+              <span>Sockets</span>
+              <span>SQL</span>
+              <span>Multithreading</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: TE QuotaCheck -->
+        <div class="project-card reveal-up delay-3" data-index="03">
+          <div class="project-card-inner">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <div class="project-links">
+                <a href="https://github.com/FAHDZER0/TE-QuotaCheck_V2" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">TE QuotaCheck V2</h3>
+            <p class="project-type">Browser Extension / Web Tool</p>
+            <p class="project-desc">
+              A browser extension that allows Telecom Egypt (TE Data) subscribers to quickly
+              check their internet quota usage without navigating through the provider's portal.
+              Clean, fast, and practical — solving a real daily frustration for thousands of users.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Browser APIs</span>
+              <span>Extension</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Know The Tree -->
+        <div class="project-card reveal-up delay-4" data-index="04">
+          <div class="project-card-inner">
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <div class="project-links">
+                <a href="https://github.com/FAHDZER0/Know-The-Tree" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Know The Tree</h3>
+            <p class="project-type">Educational App / Data Structures</p>
+            <p class="project-desc">
+              An interactive application for visualising and learning tree data structures.
+              Designed to make abstract concepts tangible through visual traversal animations
+              and step-by-step breakdowns. A teaching tool that bridges theory and intuition.
+            </p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>Data Structures</span>
+              <span>Visualisation</span>
+              <span>Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="label-num">03</span>
+        <span class="label-text">Skills</span>
+      </div>
+      <h2 class="section-title reveal-up delay-1">What I work with</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-group reveal-up delay-1">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">⬡</span> Languages
+          </h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Java</span><span class="skill-bar"><span style="--w:90%"></span></span></li>
+            <li><span class="skill-name">JavaScript</span><span class="skill-bar"><span style="--w:82%"></span></span></li>
+            <li><span class="skill-name">Python</span><span class="skill-bar"><span style="--w:78%"></span></span></li>
+            <li><span class="skill-name">TypeScript</span><span class="skill-bar"><span style="--w:70%"></span></span></li>
+            <li><span class="skill-name">C / C++</span><span class="skill-bar"><span style="--w:72%"></span></span></li>
+            <li><span class="skill-name">Dart / Flutter</span><span class="skill-bar"><span style="--w:75%"></span></span></li>
+            <li><span class="skill-name">PHP</span><span class="skill-bar"><span style="--w:60%"></span></span></li>
+            <li><span class="skill-name">SQL</span><span class="skill-bar"><span style="--w:80%"></span></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal-up delay-2">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">⬡</span> Frameworks & Libraries
+          </h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">JavaFX / Swing</span><span class="skill-bar"><span style="--w:88%"></span></span></li>
+            <li><span class="skill-name">Python Flask</span><span class="skill-bar"><span style="--w:70%"></span></span></li>
+            <li><span class="skill-name">HTML / CSS</span><span class="skill-bar"><span style="--w:85%"></span></span></li>
+            <li><span class="skill-name">Bootstrap</span><span class="skill-bar"><span style="--w:75%"></span></span></li>
+            <li><span class="skill-name">TensorFlow / CV</span><span class="skill-bar"><span style="--w:65%"></span></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal-up delay-3">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">⬡</span> Tools & Practices
+          </h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Git / GitHub</span><span class="skill-bar"><span style="--w:85%"></span></span></li>
+            <li><span class="skill-name">Agile / Scrum</span><span class="skill-bar"><span style="--w:80%"></span></span></li>
+            <li><span class="skill-name">UML & System Design</span><span class="skill-bar"><span style="--w:78%"></span></span></li>
+            <li><span class="skill-name">Software Testing</span><span class="skill-bar"><span style="--w:75%"></span></span></li>
+            <li><span class="skill-name">Database Design</span><span class="skill-bar"><span style="--w:80%"></span></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group reveal-up delay-4">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">⬡</span> Soft Skills
+          </h3>
+          <div class="soft-skills-chips">
+            <span>Team Leadership</span>
+            <span>Technical Communication</span>
+            <span>Problem Solving</span>
+            <span>Agile Mindset</span>
+            <span>Client Relations</span>
+            <span>Public Speaking</span>
+            <span>Critical Thinking</span>
+            <span>Project Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="label-num">04</span>
+        <span class="label-text">Experience</span>
+      </div>
+      <h2 class="section-title reveal-up delay-1">Where I've worked</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up delay-1">
+          <div class="timeline-date">Jul — Sep 2024</div>
+          <div class="timeline-content">
+            <h3>Product Manager Intern</h3>
+            <span class="timeline-company">Arma Co · Cairo, Egypt</span>
+            <ul class="timeline-bullets">
+              <li>Managed project timelines, resources, and budgets to ensure on-time product delivery</li>
+              <li>Delivered presentations at industry conferences promoting brand awareness</li>
+              <li>Implemented Agile methodologies to streamline product development cycles</li>
+              <li>Negotiated vendor contracts and collaborated on a machine learning model</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up delay-2">
+          <div class="timeline-date">Aug — Oct 2023</div>
+          <div class="timeline-content">
+            <h3>IT Intern</h3>
+            <span class="timeline-company">Sawali Co · Cairo, Egypt</span>
+            <ul class="timeline-bullets">
+              <li>Managed Service Desk operations including networking and IT technical support</li>
+              <li>Worked alongside IT professionals to strengthen understanding of IT infrastructure</li>
+              <li>Gained hands-on experience in real-world enterprise IT environments</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ACTIVITIES ═══════════════════════ -->
+  <section class="activities section" id="activities">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="label-num">05</span>
+        <span class="label-text">Student Activities</span>
+      </div>
+      <h2 class="section-title reveal-up delay-1">Beyond the classroom</h2>
+
+      <div class="activities-grid">
+
+        <div class="activity-card reveal-up delay-1 featured">
+          <div class="activity-icon">◈</div>
+          <div class="activity-body">
+            <span class="activity-org">GDG — Google Developer Groups</span>
+            <h3>Game Development Team Leader</h3>
+            <p>
+              Led the Game Development team within the Google Developer Groups chapter at AASTMT.
+              Guided team members through game development concepts, coordinated project work,
+              and helped build a community of developers passionate about interactive experiences.
+            </p>
+            <div class="activity-tags">
+              <span>Leadership</span>
+              <span>Game Dev</span>
+              <span>Community</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card reveal-up delay-2">
+          <div class="activity-icon">◇</div>
+          <div class="activity-body">
+            <span class="activity-org">AAST — Robotics</span>
+            <h3>Core Member — GDSC Robotics</h3>
+            <p>
+              Active core member of the Robotics team, contributing to workshops, technical
+              sessions, and hands-on robotics projects as part of the Google Developer Student
+              Club ecosystem.
+            </p>
+            <div class="activity-tags">
+              <span>Robotics</span>
+              <span>GDSC</span>
+              <span>Hardware</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card reveal-up delay-3">
+          <div class="activity-icon">◇</div>
+          <div class="activity-body">
+            <span class="activity-org">AASTMT</span>
+            <h3>Minor in Robotics</h3>
+            <p>
+              Pursuing a minor in Robotics alongside a Software Engineering major, exploring
+              the intersection of embedded systems, programming, and mechanical design — and
+              building versatile engineering skills across disciplines.
+            </p>
+            <div class="activity-tags">
+              <span>Robotics</span>
+              <span>Embedded</span>
+              <span>Engineering</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal-up">
+        <span class="label-num">06</span>
+        <span class="label-text">Contact</span>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-left reveal-up delay-1">
+          <h2>Let's talk<span class="accent">.</span></h2>
+          <p>
+            Whether you have a project in mind, an open role, or just want to connect —
+            I'm always happy to hear from you. Reach out through any of the channels below.
+          </p>
+          <a href="Fahd_Ahmed_CV.pdf" download class="cv-download-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download my CV
+          </a>
+        </div>
+
+        <div class="contact-links reveal-up delay-2">
+          <a href="mailto:fahdahmed132@gmail.com" class="contact-link" target="_blank" rel="noopener">
+            <div class="contact-link-icon">✉</div>
+            <div class="contact-link-body">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">fahdahmed132@gmail.com</span>
+            </div>
+            <div class="contact-link-arrow">→</div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/fahd-ahmed-33383730a/" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">in</div>
+            <div class="contact-link-body">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">fahd-ahmed-33383730a</span>
+            </div>
+            <div class="contact-link-arrow">→</div>
+          </a>
+
+          <a href="https://github.com/FAHDZER0" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="contact-link-body">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">FAHDZER0</span>
+            </div>
+            <div class="contact-link-arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name">Fahd Ahmed</span>
+        <span class="footer-copy">© 2025 — All rights reserved</span>
+        <span class="footer-built">Built with care &amp; code</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
