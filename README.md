@@ -4,7 +4,7 @@ A personal portfolio website built for the Professional Training 3 course assign
 
 ## Live Site
 
-🔗 **[fahdzer0.github.io]([https://fahdzer0.github.io](https://fahdzer0.github.io/Portfolio-Website-Assignment/))** ← replace with your actual URL
+🔗 **[fahdzer0.github.io]([https://fahdzer0.github.io](https://fahdzer0.github.io/Portfolio-Website-Assignment/))** 
 
 ---
 
